@@ -1,0 +1,3 @@
+;; Real-world organization location / contact.
+;; :head-role is institutional title only — no personal names.
+{:contact-page "https://www.wikidata.org/wiki/Q842043", :ooyake-id "gov.jpn.competition", :sourced-from "com-etzhayyim-ooyake gov-units (verbatim where present)", :head-role-note "institutional office title only; personal names of current office-holders are intentionally NOT stored", :official-url "http://www.jftc.go.jp/", :head-role "公正取引委員会委員長", :hq {:line-en "Chiyoda", :country "jpn", :kind "headquarters", :provenance "https://www.wikidata.org/wiki/Q842043", :last-verified "2026-06-03", :sourcing "authoritative"}, :wikidata "Q842043", :name-en "Fair Trade Commission", :name-local "公正取引委員会"}
