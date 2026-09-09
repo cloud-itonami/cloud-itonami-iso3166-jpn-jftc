@@ -41,7 +41,7 @@
   Extending. A statute not in this table has NO spec-basis, full stop. Extend
   `catalog` with a real, API-confirmed citation; never invent an id, a URL,
   a law number, or a title."
-  (:require [kotoba.lang.text :as str]))
+  (:require [clojure.string :as str]))
 
 (def egov-laws-api
   "The e-Gov Laws API v2 search endpoint these entries were verified against.
