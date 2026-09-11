@@ -1,4 +1,4 @@
-#!/usr/bin/env nbb
+#!/usr/bin/env kbb
 ;; Live citation gate for src/statute/facts.cljk.
 ;;
 ;; Re-fetches the official e-Gov Laws API v2 and asserts TWO things:
@@ -13,7 +13,7 @@
 ;; Any drift, any missing law, any absence that stopped being true, any
 ;; unreachable API => non-zero.
 ;;
-;;   nbb tools/verify_citations.cljk
+;;   kbb --backend sci tools/verify_citations.cljk
 ;;
 ;; Why check absences at all. A gate that only re-checks what we wrote down
 ;; can only ever tell us our positives rotted. It cannot tell us the world
