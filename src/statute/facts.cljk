@@ -14,7 +14,7 @@
   Nothing here is fabricated: each `:statute/verified-label` below is the
   byte-exact `law_title` returned by the e-Gov Laws API v2 on
   `:statute/verified-at`, together with the `law_num` and `promulgation_date`
-  from the same response, and `tools/verify_citations.cljs` re-fetches that
+  from the same response, and `tools/verify_citations.cljk` re-fetches that
   API and fails if any of the three drifts.
 
   Why titles are re-fetched instead of trusted. Statute titles in this domain

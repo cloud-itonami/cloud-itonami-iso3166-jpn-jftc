@@ -1,5 +1,5 @@
 #!/usr/bin/env nbb
-;; Live citation gate for src/statute/facts.cljc.
+;; Live citation gate for src/statute/facts.cljk.
 ;;
 ;; Re-fetches the official e-Gov Laws API v2 and asserts TWO things:
 ;;
@@ -13,7 +13,7 @@
 ;; Any drift, any missing law, any absence that stopped being true, any
 ;; unreachable API => non-zero.
 ;;
-;;   nbb tools/verify_citations.cljs
+;;   nbb tools/verify_citations.cljk
 ;;
 ;; Why check absences at all. A gate that only re-checks what we wrote down
 ;; can only ever tell us our positives rotted. It cannot tell us the world
@@ -35,7 +35,7 @@
 (ns verify-citations
   (:require [clojure.string :as str]))
 
-(def catalog-file "src/statute/facts.cljc")
+(def catalog-file "src/statute/facts.cljk")
 
 (defn- die [code & msg]
   (println (str/join " " msg))
