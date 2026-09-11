@@ -12,7 +12,7 @@
 ;; spec-basis for this repository -- extend the table, never invent an id or a
 ;; URL.
 ;;
-;; VERIFIED BY `nbb scripts/verify-facts.cljs`, which re-fetches every entry.
+;; VERIFIED BY `nbb scripts/verify-facts.cljk`, which re-fetches every entry.
 ;; Each carries a :source/verify tag naming WHICH check establishes it.
 ;;
 ;;   :e-gov-law-id   Resolve the law id through the e-Gov law API and require
@@ -83,7 +83,7 @@
                 title is `404 Not Found`. Both responses are served at the
                 requested URL with no redirect, so :page-identity and
                 :page-text both discriminate. The repo-internal
-                src/statute/facts.cljc records an earlier window in which
+                src/statute/facts.cljk records an earlier window in which
                 the host was 403 to automated clients; that window is not
                 what this run measured, and the register is pinned to this
                 run's measurement rather than to a memory of a prior one.
